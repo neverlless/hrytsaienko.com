@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<header>
+		<h1 class="title">
+		  Maksym Hrytsaienko
+		</h1>
+
+		<p>00. Hi, I'm <a href="https://t.me/ifellow">🔐ifellow</a>. I'm  primarily working now with payment card processing software in the Fintech area. My native language is Bash, but I'm also practicing Go and Python for my <a href="https://github.com/neverlless?tab=repositories">personal projects</a>. I'm currently employed by <a href="https://www.megabank.ua/">MEGABANK PJSC</a> where I work as Linux System Administrator.</p>
+		<p>10. In the past I worked for <a href="https://www.clhs.com.ua/">JSB CLEARING HOUSE</a>.</p>
+		<p>20. If you happen to have any questions or just would like to contact me, you can do this by <a href="mailto:hrytsaienko.my@gmail.com">email</a>. You can also find me on <a href="https://github.com/neverlless">Github</a>, <a href="https://www.linkedin.com/in/maksym-hrytsaienko/">LinkedIn</a>, <a href="https://www.instagram.com/never.lless/">Instagram</a>.</p>
+		<p>30. BTW, I use <s>Arch</s> <a href="https://ubuntu.com/">Ubuntu</a></p>
+	</header>
+
+	<article>
+	  {% for page in paginator.pages %}
+	  <h3>→ <a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+	  {% endfor %}
+	</article>
+
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+	<a href="/">← home</a>
+</header>
+<body>
+    <h2>{{ page.title }}</h2>
+    <small>{{ page.date }}</small>
+    {{page.content | safe}}
+</body>
+{% endblock content %}
